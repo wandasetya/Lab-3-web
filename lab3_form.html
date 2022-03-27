@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>HTML Lanjutan</title>
+</head>
+<body>
+ <header>
+ <h1>Membuat Form</h1>
+ <form action="proses.php" method="post">
+   <style>
+ body {
+   background-image : url("HD-wallpaper-white-hexagon-geometric-shapes-white-aesthetic.JPG")
+ }
+</style>
+    <fieldset>
+    <legend>Data Pelanggan</legend>
+    <p>
+    <label for="nama">Nama</label> <td> 
+    <input type="text" id="nama" name="nama">
+    </p>
+    <p>
+    <label for="alamat">Alamat</label> <td> 
+    <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+    </p>
+    <p>
+    <label>Jenis Kelamin</label> <td> 
+    <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+   for="jk_l">Laki-laki</label>
+    <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+    for="jk_p">Perempuan</label>
+ </p>
+ <P>
+    <label>Kode Unik</label> <td> 
+    <form name="form1" action="proses.php" method="get">
+    <select name="Kode Unik">
+      <option value="Jkt-01"selected="selected">Jkt-01</option>
+      <option value="Bgr-02">Bgr-02</option>
+      <option value="Dpk-03">Dpk-03</option>
+      <option value="Tgr-04">Tgr-04</option>
+      <option value="Bks-05">Bks-05</option>
+    </select>
+  </P>
+  <P>
+    <label>Gol Darah</label> <td> 
+   <form name="form2" action="proses.php" method="get">
+   <select name="Gol Darah" size="6" multiple="multiple">
+     <option value="A" selected="selected"> A </option>
+     <option value="B"> B </option>
+     <option value="AB"> AB </option>
+     <option value="O"> O </option>
+   </select>
+   </form>
+    </P>
+ <p><input type="submit" value="Login"></p>
+ </fieldset>
+</form>
+<style>
+    form p > label {
+    display: inline-block;
+    width: 100px;
+    }
+    form input[type="text"], form textarea {
+    border: 1px solid #197a43;
+    }
+    form input[type="submit"] {
+    border: 1px solid #197a43;
+    background-color: #197a43;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+    }
+   </style>
+ </header>
+</body>
+</html>
